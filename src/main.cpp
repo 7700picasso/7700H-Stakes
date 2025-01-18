@@ -198,8 +198,8 @@ ASSET(example_txt); // '.' replaced with "_" to make c++ happy
  * This is an example autonomous routine which demonstrates a lot of the features Robot has to offer
  */
 void autonomous() {
-    /*
-    chassis.setPose(-53, -35, 270);
+     //DEANS RIGHT SIDE THIGNY!!
+    /*chassis.setPose(-53, -35, 270);
     chassis.moveToPose(-22, -24, 240, 1500, { .forwards = false});
     chassis.waitUntilDone();
     pros::delay(200);
@@ -232,14 +232,14 @@ void autonomous() {
     Intake.move_velocity(600);
     pros::delay(1000);
     //HERE
-    chassis.moveToPose(-10, -62, 95, 2000);
+    chassis.moveToPose(-10, -62, 95, 2000);*/
     //skidibi legitness!! :3
     // super sugoi sugoi sugoi!!!!
-   */
+   
     
-	/*
-    //BLUE POSITIVE SIDE **WORKING**
-    chassis.setPose(55, -60, 270);
+	
+    //BLUE POSITIVE SIDE **WORKING** JESSIE'S RUSH
+    /*chassis.setPose(55, -60, 270);
     chassis.moveToPoint(25, -60, 1500);
     chassis.moveToPoint(13, -56, 1000);
     chassis.waitUntilDone();
@@ -294,8 +294,8 @@ void autonomous() {
     chassis.turnToHeading(270, 500);
     */
 
-   
-   chassis.setPose(-63, 0, 90);
+   //SKILLS!!!
+   /*chassis.setPose(-63, 0, 90);
    Intake.move_velocity(200);
    pros::delay(500);
    Intake.move_velocity(0);
@@ -323,7 +323,6 @@ void autonomous() {
    pros::delay(100);
    Intake.move_velocity(600);
    chassis.moveToPoint(-5, -47, 1000, {.forwards = false});
-
    // At Wall Stake
    chassis.moveToPose(-5, -65, 180, 2000);
    chassis.waitUntilDone();
@@ -334,8 +333,23 @@ void autonomous() {
    nextState();
    Intake.move_velocity(600);
    chassis.moveToPoint(0, -50, 1000, {.forwards = false});
-   chassis.moveToPose(-60, -50, 260, 3000, {.maxSpeed = 100});
+   chassis.moveToPose(-60, -50, 260, 3000, {.maxSpeed = 100});*/
 
+
+    //1/17 JESSIES
+    chassis.setPose(138, -33, 330);
+    IntakeLift.toggle();
+    Intake.move_velocity(600);
+    chassis.moveToPoint(110, 10, 500, {.maxSpeed = 60});
+    chassis.waitUntilDone();
+    IntakeLift.toggle();
+    pros::delay(200);
+    chassis.moveToPoint(136, -20, 500, {.forwards = false});
+    Intake.move_velocity(200);
+    chassis.turnToHeading(271, 500);
+    Intake.move_velocity(0);
+    chassis.moveToPoint(165, -16, 500, {.forwards = false, .maxSpeed = 75});
+    
    /*
    chassis.turnToPoint(-47, -59, 500);
    chassis.moveToPose(-47, -65, 180, 1000);
